@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //a[@id='cf128f7c-3b92-47e9-b84c-0e79dd302f4f_acf4953e-4908-4dfb-a677-239b5acaeb81-header-desktop-nav-level-0-link']' ---> has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[Validating ---> Actual : *** Find an Allstate Insurance Agent Near You ***. Expected : *** Find an Allstate Insurance Agent Near You ***<br>]]>
+    </line>
+    <line>
+      <![CDATA[11435 <--- This value has been passed into ---> [[ChromeDriver: chrome on MAC (799c96e53cfbbbddaeb3fa32cfcd081c)] -> css selector: #zip]<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on MAC (799c96e53cfbbbddaeb3fa32cfcd081c)] -> css selector: button.search-button.Locator-button.Button--mint.js-form-submit] ---> has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on MAC (799c96e53cfbbbddaeb3fa32cfcd081c)] -> xpath: //span[text()='Filters']] ---> has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on MAC (799c96e53cfbbbddaeb3fa32cfcd081c)] -> css selector: button.Locator-toggleView.Locator-toggleView--list.js-toggleView-list] ---> has been clicked<br>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-02-17T13:43:29 EST" name="Default suite" finished-at="2023-02-17T13:43:45 EST" duration-ms="15641">
+    <groups>
+      <group name="agent">
+        <method signature="FindAnAgent.findAnAgent()[pri:2, instance:findAagent.FindAnAgent@7133da86]" name="findAnAgent" class="findAagent.FindAnAgent"/>
+      </group> <!-- agent -->
+    </groups>
+    <test started-at="2023-02-17T13:43:29 EST" name="Default test" finished-at="2023-02-17T13:43:45 EST" duration-ms="15641">
+      <class name="findAagent.FindAnAgent">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:findAagent.FindAnAgent@7133da86]" started-at="2023-02-17T13:43:29 EST" name="setUpDriver" finished-at="2023-02-17T13:43:41 EST" duration-ms="11870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="findAnAgent()[pri:2, instance:findAagent.FindAnAgent@7133da86]" started-at="2023-02-17T13:43:41 EST" name="findAnAgent" finished-at="2023-02-17T13:43:45 EST" duration-ms="3720" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //a[@id='cf128f7c-3b92-47e9-b84c-0e79dd302f4f_acf4953e-4908-4dfb-a677-239b5acaeb81-header-desktop-nav-level-0-link']' ---> has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[Validating ---> Actual : *** Find an Allstate Insurance Agent Near You ***. Expected : *** Find an Allstate Insurance Agent Near You ***<br>]]>
+            </line>
+            <line>
+              <![CDATA[11435 <--- This value has been passed into ---> [[ChromeDriver: chrome on MAC (799c96e53cfbbbddaeb3fa32cfcd081c)] -> css selector: #zip]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on MAC (799c96e53cfbbbddaeb3fa32cfcd081c)] -> css selector: button.search-button.Locator-button.Button--mint.js-form-submit] ---> has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on MAC (799c96e53cfbbbddaeb3fa32cfcd081c)] -> xpath: //span[text()='Filters']] ---> has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on MAC (799c96e53cfbbbddaeb3fa32cfcd081c)] -> css selector: button.Locator-toggleView.Locator-toggleView--list.js-toggleView-list] ---> has been clicked<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findAnAgent -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:findAagent.FindAnAgent@7133da86]" started-at="2023-02-17T13:43:45 EST" name="tearUp" finished-at="2023-02-17T13:43:45 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+      </class> <!-- findAagent.FindAnAgent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
