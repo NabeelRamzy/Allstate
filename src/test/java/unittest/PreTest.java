@@ -1,4 +1,4 @@
-package testingTest;
+package unittest;
 
 public class PreTest {
 
