@@ -22,8 +22,8 @@ public class LandingPage {
 	@FindBy(id = "heroBundleGetQuote")
 	WebElement getAqouteButton;
 	
-    public void validatelandingpagetitle(String expected) {
-		validate(title, expected);
+    public void validatelandingpagetitle(String expectedTitel) {
+		validate(title, expectedTitel);
 	}
 	
 	public void unclicktheautobutton() {

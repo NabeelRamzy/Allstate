@@ -10,16 +10,30 @@ import static utils.IConstant.PAGELOAD_WAIT;
 import static utils.IConstant.SAFARI;
 import static utils.IConstant.URL;
 import static utils.IConstant.*;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.ObjectInputFilter.Status;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
+
+import com.github.dockerjava.transport.DockerHttpClient.Request.Method;
+import com.google.common.io.Files;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObject.FindAnAgent;
@@ -27,6 +41,7 @@ import pageObject.HomePage;
 import pageObject.InformationPage;
 import pageObject.LandingPage;
 import pageObject.LocationPage;
+import reporting.Logs;
 import utils.ReadProperties;
 
 
@@ -41,16 +56,16 @@ public class RootClass {
 	ReadProperties readProperties = new ReadProperties();;
 
 	
-
+    @Parameters("browser")
 	@BeforeMethod
-	public void setUpDriver() {
-		String browser =  readProperties.getProperty(BROWSER);
+	public void setUpDriver(String browsername) {
+	//	String browser =  readProperties.getProperty(BROWSER);
 		String url =  readProperties.getProperty(URL);
 		long pageLoadWait =  readProperties.getNumProperty(PAGELOAD_WAIT);
 		long implicitlyWait =  readProperties.getNumProperty(IMPLECIT_WAIT);
 		long explicitWait =  readProperties.getNumProperty(EXPLICIT_WAIT);
 
-		initDriver(BROWSER);
+		initDriver(browsername);
 		initClass(driver);
 		driver.get(url);
 		driver.manage().window().maximize();
@@ -99,5 +114,17 @@ public class RootClass {
 		//driver.quit();
 
 	}
-
+   
+//	@AfterMethod
+/*	public void getResult(ITestResult result, Method method) {
+		if(result.getStatus() == ITestResult.SUCCESS) {
+			test.log(Status.PASS, PASSED);
+		}else if(result.getStatus() == ITestResult.FAILURE) {
+			test.log(Status.FAIL, FAILED);
+			test.addScreenCaptureFromPath(captureScreenShot(driver, method.name()));
+		}else if(result.getStatus() == ITestResult.SKIP) {
+			test.log(Status.SKIP, SKIPPED);
+		}*/
+	
+	
 }

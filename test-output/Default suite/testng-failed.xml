@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="findAagent.FindAnAgent">
+      <class name="automationTest.ParameterizedTest">
         <methods>
+          <include name="create_HomeQuoteTest"/>
           <include name="setUpDriver"/>
           <include name="tearUp"/>
-          <include name="findAnAgent"/>
         </methods>
-      </class> <!-- findAagent.FindAnAgent -->
+      </class> <!-- automationTest.ParameterizedTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

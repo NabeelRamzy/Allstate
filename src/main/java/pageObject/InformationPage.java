@@ -33,8 +33,8 @@ public class InformationPage {
 	@FindBy(id = "btn_next")
 	WebElement nextbutton;
 	
-	public void validatepagetitle(String expected) {
-		validate(pageTitle, expected);
+	public void validatepagetitle(String expectedTitle) {
+		validate(pageTitle, expectedTitle);
 	}
 	
 	public void insertfirstname(String expected) {
